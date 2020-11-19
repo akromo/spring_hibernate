@@ -16,7 +16,8 @@ public class Car {
     @Column(name = "series")
     private int series;
 
-    public Car() {}
+    public Car() {
+    }
 
     public Car(String model, int series) {
         this.model = model;
@@ -40,7 +41,7 @@ public class Car {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return String.format("Model: %s, Series: %d", this.getModel(), this.getSeries());
     }
 }
